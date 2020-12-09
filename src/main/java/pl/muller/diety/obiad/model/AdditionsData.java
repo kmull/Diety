@@ -6,8 +6,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import lombok.Data;
 import pl.muller.diety.general.model.ModelData;
 
+@Data
 @Entity
 @Table(name = "obiad_dodatki")
 public class AdditionsData extends ModelData {

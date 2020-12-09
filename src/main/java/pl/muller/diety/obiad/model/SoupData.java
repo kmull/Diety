@@ -33,5 +33,10 @@ public class SoupData extends ModelData {
 	private String type;
 	private String name;
 	private String mealType;
+	
+	@Override
+	public String toString() {
+		return "SoupData [id=" + id + ", type=" + type + ", name=" + name + ", mealType=" + mealType + "]";
+	}
 
 }

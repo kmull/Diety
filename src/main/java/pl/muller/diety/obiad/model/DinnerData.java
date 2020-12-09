@@ -37,4 +37,9 @@ public class DinnerData extends ModelData {
 	public Long getId() {
 		return this.id;
 	}
+
+	@Override
+	public String toString() {
+		return "DinnerData [id=" + id + ", type=" + type + ", name=" + name + ", mealType=" + mealType + "]";
+	}
 }
