@@ -30,4 +30,8 @@ public class MainService {
 		return (List<DietaData>) StreamSupport.stream(mainRepository.findAll().spliterator(), false)
 				.collect(Collectors.toList());
 	}
+	
+	public void deleteById(Long id) {
+		mainRepository.deleteById(id);
+	}
 }

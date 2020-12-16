@@ -44,5 +44,11 @@ public class MainController {
 		log.info("pobrano diety: {}", diety);
 		return diety;
 	}
+	
+//	Usówanie
+	@GetMapping("/delete-by-id")
+	public void deleteById(@RequestParam Long id) {
+		service.deleteById(id);
+	}
 
 }
